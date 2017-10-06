@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Regristation Form</title>
+  </head>
+ 
+  <body>
+
+  <h1>Register</h1>
+
+  <form action = "sign-in-url" method = "post">	
+	<div>
+
+		  <label> First Name 
+		  <input name = "first" type="text" placeholder="John" required></input>  
+		  </label>
+
+		  <label> Last Name 
+		  <input name ="last" type="text" placeholder="Smith" required> </input> 
+		  </label>
+
+	</div>
+  
+
+	<div>
+
+		 <label for = "Male"> Male </label>
+	  	 <input name="Male" id = "Male" type = "radio" value="MALE">
+	    
+	     <label for = "Female"> Female </label>
+	     <input name="Female" id = "Female" type = "radio" value="FEMALE">
+
+	     <label for = "Other"> Other </label>
+	     <input name="Other" id = "Other" type = "radio" value="OTHER">
+
+	</div>
+  
+	<div>
+  
+		  <label for= "Email" > Email: </label>
+		  <input id ="Email" type="email" placeholder = "your email" required="@">	
+
+		  <label for= "Password" > Password: </label>
+		 <!--  <input id ="Password" type="password" placeholder = "your password" minlength="5" maxlength="10s"> -->	
+		  <input type="password" name="Password" pattern= ".{5,10}" required title="Password must be between 5 and 10 characters.">
+
+	</div>
+
+  
+	<div>
+
+		Birthday:
+	  	<select name= "Month"> 
+	  		<option value="" disabled selected> Month </option>
+	  		<option>Jan</option>
+	  		<option>Feb</option>
+	  		<option>Mar</option>
+	  	</select>
+
+	  	<select name= "Day"> 
+	  	    <option value="" disabled selected> Day </option>
+	  		<option>1</option>
+	  		<option>2</option>
+	  		<option>3</option>
+	  	</select>
+
+	  	<select name="Year"> 
+	  		<option value="" disabled selected> Year</option>
+		  	<option>1998</option>
+		  	<option>1999</option>
+		  	<option>2000</option>
+	  	</select>
+
+	</div> 
+
+
+   
+
+  I agree to the terms and condtions <input id = "checkBox" type = "checkbox">
+  
+  <input type="submit">
+  
+  </form>
+  
+
+  </body>
+</html>
